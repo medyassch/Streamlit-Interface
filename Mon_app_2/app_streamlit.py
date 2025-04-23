@@ -2,8 +2,8 @@ import streamlit as st
 import numpy as np
 import pickle
 
-with open("models/random_forest_model.pkl", "rb") as f:
-    model = pickle.load(f)
+with open("random_forest_model.pkl", "rb") as file:
+    model = pickle.load(file)
 
 st.title("Prédiction de Client")
 
